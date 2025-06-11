@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    .container__list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 0 8px;
+    }
+
+    #todo-input {
+      width: 100%;
+      max-width: 250px;
+      padding: 4px 8px;
+      margin-bottom: 16px;
+    }
+
+    button {
+      padding: 4px 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <section class="container">
+    <input
+      id="todo-input"
+      type="text">
+    <button onclick="addTodo()">
+      Add
+    </button>
+    <div
+      id="todo-list"
+      class="container__list">
+    </div>
+  </section>
+
+  <script src="index.js"></script>
+</body>
+</html>
